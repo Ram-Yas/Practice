@@ -9,7 +9,7 @@ public class Q18_StringManipulation12 {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Bir String girin : ");
-        String str1 = scan.next();
+        String str1 = scan.nextLine();
        // String control = str1.contains(" ");
         if(str1.contains(" ")){
             System.out.println("girilen String bosluk icerir");
