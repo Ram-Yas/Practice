@@ -13,11 +13,11 @@ public class Q18_StringManipulation12 {
        // String control = str1.contains(" ");
         if(str1.contains(" ")){
             System.out.println("girilen String bosluk icerir");
-        }else System.out.println("Girilen String bosluk icermez");
-
-        if(!str1.isEmpty()){
-            System.out.println("String bos degil");
         }
+        if(str1.length()==0){
+            System.out.println(" bos string icerir");
+        }else
+            System.out.println("String iniz bos degil");
     }
 
 }
