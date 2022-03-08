@@ -16,7 +16,14 @@ public class Q09_StringManipulation03 {
 		 	 \\S   ==> space disindaki hersey  */
 
     public static void main(String[] args) {
-
-
+        String str1= "$13.99";
+        String str2= "$10.55";
+        str1 = str1.replaceAll("\\D", "");
+        Double first = Double.parseDouble(str1);
+       // System.out.println(ilk);
+        str2 = str2.replaceAll("\\D", "");
+        Double second = Double.parseDouble(str2);
+        double total = (first+second)/100;
+        System.out.println("Toplam = $"+ total);
     }
 }

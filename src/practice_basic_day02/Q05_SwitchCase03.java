@@ -15,66 +15,67 @@ public class Q05_SwitchCase03 {
         if (number > 99 && number < 1000) {
             switch (yuzler) {
                 case 0: System.out.println("sifir"); break;
-                case 1:                    System.out.println("bir");
+                case 1:
+                    System.out.println("yuz");
                     break;
                 case 2:
-                    System.out.println("iki");
+                    System.out.println("iki yuz");
                     break;
                 case 3:
-                    System.out.println("uc");
+                    System.out.println("uc yuz");
                     break;
                 case 4:
-                    System.out.println("dort");
+                    System.out.println("dort yuz");
                     break;
                 case 5:
-                    System.out.println("bes");
+                    System.out.println("bes yuz");
                     break;
                 case 6:
-                    System.out.println("alti");
+                    System.out.println("alti yuz");
                     break;
                 case 7:
-                    System.out.println("yedi");
+                    System.out.println("yedi yuz");
                     break;
                 case 8:
-                    System.out.println("sekiz");
+                    System.out.println("sekiz yuz");
                     break;
                 case 9:
-                    System.out.println("dokuz");
+                    System.out.println("dokuz yuz");
                     break;
 
             }
             switch (onlar) {
-                case 0: System.out.println("sifir"); break;
-                case 1:                    System.out.println("bir");
+                case 0: System.out.println(""); break;
+                case 1:                    System.out.println("on");
                     break;
                 case 2:
-                    System.out.println("iki");
+                    System.out.println("yirmi");
                     break;
                 case 3:
-                    System.out.println("uc");
+                    System.out.println("otuz");
                     break;
                 case 4:
-                    System.out.println("dort");
+                    System.out.println("kirk");
                     break;
                 case 5:
-                    System.out.println("bes");
+                    System.out.println("elli");
                     break;
                 case 6:
-                    System.out.println("alti");
+                    System.out.println("altmis");
                     break;
                 case 7:
-                    System.out.println("yedi");
+                    System.out.println("yetmis");
                     break;
                 case 8:
-                    System.out.println("sekiz");
+                    System.out.println("seksen");
                     break;
                 case 9:
-                    System.out.println("dokuz");
+                    System.out.println("doksan");
                     break;
 
             }
             switch (birler) {
-                case 0: System.out.println("sifir"); break;
+                case 0: System.out.println(""); break;
                 case 1:                    System.out.println("bir");
                     break;
                 case 2:
@@ -101,7 +102,6 @@ public class Q05_SwitchCase03 {
                 case 9:
                     System.out.println("dokuz");
                     break;
-
             }
             scan.close();
         }
