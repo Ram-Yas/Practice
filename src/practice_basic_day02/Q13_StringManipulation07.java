@@ -14,9 +14,18 @@ public class Q13_StringManipulation07 {
      */
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
-        System.out.println("bir String giriniz");
+        System.out.print("bir String giriniz: ");
         String dizi = scan.next();
 
+        xyzVarMi(dizi);
 
+
+
+    }
+
+    private static void xyzVarMi(String dizi) {
+        if (dizi.contains("xyz")){
+            System.out.println(dizi+" true");
+        } else System.out.println(dizi+ " false");
     }
 }
