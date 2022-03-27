@@ -9,5 +9,33 @@ public class OgretmenBilgileri {
 	 Bu class'dan 10 object olusturulursa 1 tane static variable ve 10 tane
 	 instance variable uretilmis demektir.
      */
+    static String isim;
+    static String soyisim;
+    static int numara;
+    static String brans;
 
+    public OgretmenBilgileri(String isim, String soyisim, int numara, String brans) {
+        this.isim = isim;
+        this. soyisim = soyisim;
+        this. numara =numara;
+        this. brans = brans;
+    }
+
+    /*public OgretmenBilgileri(){
+
+    }*/
+
+    public String toString() {
+        return ("isim: "+isim+ " soyisim: "+ soyisim+ "numara"+ numara+ " brans"+ brans);
+
+    }
+
+    public static void main(String[] args) {
+        isim = "ali";
+        soyisim = "kaya";
+        numara = 1;
+        brans = "mat";
+
+    }
 }
+
