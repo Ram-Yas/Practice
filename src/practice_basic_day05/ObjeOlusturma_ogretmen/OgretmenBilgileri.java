@@ -11,31 +11,19 @@ public class OgretmenBilgileri {
      */
     static String isim;
     static String soyisim;
-    static int numara;
+    static int yas;
     static String brans;
-
-    public OgretmenBilgileri(String isim, String soyisim, int numara, String brans) {
-        this.isim = isim;
-        this. soyisim = soyisim;
-        this. numara =numara;
-        this. brans = brans;
-    }
-
-    /*public OgretmenBilgileri(){
-
-    }*/
-
-    public String toString() {
-        return ("isim: "+isim+ " soyisim: "+ soyisim+ "numara"+ numara+ " brans"+ brans);
-
-    }
+    static String tel;
 
     public static void main(String[] args) {
-        isim = "ali";
-        soyisim = "kaya";
-        numara = 1;
-        brans = "mat";
-
     }
+
+
+
+
+
+
+
+
 }
 
