@@ -12,18 +12,26 @@ public class Ornek1 {
      */
 
     public static void main(String[] args) {
-        int input[] = {1, 2, 3, 4, 5, 6, 7};
-        int toplam = 0;
-        for (int i = 0; i < input.length; i++) {
-            toplam += input[i];
-        }
-        double ortalama = toplam / input.length;
-        System.out.println(ortalama);
 
-        for (int i = 0; i <input.length ; i++) {
+        int input[] = {15,2,32,4,50,6,7,8,25,35};
+        int toplam = 0;
+
+        for (int i = 0; i < input.length; i++){
+            toplam +=  input[i];  //toplam=toplam+input[i]
+        }
+        System.out.println(toplam);
+
+        double ortalama = toplam/input.length;
+        System.out.print("ortalamadan buyuk sayilar :");
+        for (int i = 0; i <input.length; i++){ //elemanlari tek tek dolasip yazdirmak icin
+
             if (input[i]>ortalama){
                 System.out.print(input[i]+ " ");
             }
+
         }
+
+
     }
+
 }

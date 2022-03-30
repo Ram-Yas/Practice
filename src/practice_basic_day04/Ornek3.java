@@ -8,24 +8,23 @@ public class Ornek3 {
      *
      * OUTPUT : Arraydeki cift sayilarin toplami : 30
      */
+
     public static void main(String[] args) {
-        int arr[][] = {{1, 3, 6}, {2, 8}, {5, 7, 9, 14}};
-        ciftSayilariToplaa(arr);
-    }
 
-    private static void ciftSayilariToplaa(int[][] arr) {
+        int arr [][] = {{1,3,6},{5,7,9,14},{3,8,24,58,28}};
 
-        int toplam =0;
+        int toplam = 0;
 
-        for (int i = 0; i <arr.length ; i++) {
-            for (int j = 0; j < arr [i].length; j++) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr[i].length; j++){
                 if (arr[i][j]%2==0){
-                    toplam+= arr[i][j];
+                    toplam += arr[i][j];
                 }
             }
-        }
-        System.out.println("cift sayilarin toplami : "+ toplam);
 
+        }
+        System.out.println("Arraydeki cift sayilarin toplami :"+toplam);
+        //System.out.println("Arraydeki tek sayilarin toplami :"+toplam);
     }
 
 }

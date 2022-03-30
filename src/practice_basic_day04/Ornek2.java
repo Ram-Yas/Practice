@@ -14,23 +14,27 @@ public class Ornek2 {
 			 */
 
     public static void main(String[] args) {
+
         int[] arr = {5, 7, -6, 4, 2, 15, 3, 8, 1};
+
+        //int[] arr = {5, 7, -6, 4, 2, 15, 3, 8, 1};
+
         int istenenToplam = 9;
-        sayiCifti(arr, istenenToplam);
+
+        sayiCiftleri(arr, istenenToplam);
 
     }
 
-    private static void sayiCifti(int[] arr, int istenenToplam) {
+    private static void sayiCiftleri(int[] arr, int istenenToplam) {
 
-        int toplam = 0;
-
+        //int toplam = 0;
         for (int i = 0; i < arr.length; i++) {
             for (int j = i+1; j < arr.length; j++) {
-                toplam += arr[i] + arr[j];
-                if (toplam == istenenToplam) {
-                    System.out.println(arr[i] + " ve " + arr[j] + " nin toplami : " + istenenToplam + "'dir");
+
+                if (arr[i]+arr[j]==istenenToplam){
+                    System.out.println(arr[i]+" ve "+arr[j]+ " = "+istenenToplam);
                 }
-                toplam = 0;
+                //toplam=0;
             }
 
         }
