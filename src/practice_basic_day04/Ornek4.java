@@ -8,6 +8,7 @@ public class Ornek4 {
      *  elemanlarin toplamini double olarak yazdir
      */
 
+
     public static void main(String[] args) {
 
         String arr [][] = {{"$12" , "$22" , "$0"},   {"€9" , "€40" , "$1" },  {"€12", "$2","$0"}};
