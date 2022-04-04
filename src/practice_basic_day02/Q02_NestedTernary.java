@@ -14,7 +14,7 @@ public class Q02_NestedTernary {
 
     public static void main(String[] args) {
         /*Scanner scn  = new Scanner(System.in);
-        System.out.println("lurfen finql notunu girin");
+        System.out.println("lutfen final notunu girin");
         int finalNot = scan.nextInt();*/
         char finalNotu = 'A';
         //String finalNot = "";

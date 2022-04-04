@@ -13,15 +13,19 @@ public class Q02_ForEach02 {
         String[] list = {"fruits", "vegetables", "meat", "milk"};
         for (String each:list
              ) {
-            System.out.print(each+ " ");
+            System.out.print(each + " "+ each.length()+ " ");
         }
         System.out.println();
-        for (String each:list
+        for (String item:list
              ) {
-            System.out.print(each + " ");
-            if (each.startsWith("v")==true)
+
+            System.out.println();
+            if (item.startsWith("v")){
                 break;
+            }
+            System.out.println(item);
         }
+
 
 
     }
