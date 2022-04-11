@@ -5,24 +5,6 @@ public class Q08_StringManipulation02 {
     //yukardaki ornekte verilen ilk ve ikinci degiskenlerinin ilk harflerini atip birlestiriniz.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("String 1 :");
