@@ -1,5 +1,9 @@
 package interviewQuestions4;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
 public class Q05_SpecialCharRemoveArray {
     /*
    Problem Tanımı :
@@ -17,4 +21,27 @@ public class Q05_SpecialCharRemoveArray {
    ArrayList= $-13, $0, $0
    Cevap = -1 olmalı.
     */
+
+    public static void main(String[] args) {
+
+        //ArrayList<String> arrList = new ArrayList<>(Arrays.asList("$13", "$15", "$20"));
+        ArrayList<String> arrList = new ArrayList<>(Arrays.asList("$-13", "$0", "$0"));
+        System.out.println("toplam : "+getSum(arrList));
+
+    }
+
+    private static int getSum(ArrayList<String> arrList) {
+        int toplam = 0;
+        for (String each : arrList) {
+            String str = each.replace("$", "");
+
+            toplam += Integer.parseInt(str); //string oaln sayi degerlerini integer'a cevirdik ve toplama ekledik
+        }
+        if (toplam<0) {
+            return -1; //toplam 0'dan kucuk oldugu icin method -1 dondursun  dedigi icin yaptik
+        } else {
+            return toplam;
+        }
+
+    }
 }
