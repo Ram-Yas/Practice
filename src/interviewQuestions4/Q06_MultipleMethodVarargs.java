@@ -7,5 +7,8 @@ public class Q06_MultipleMethodVarargs {
 	yazdıran parametreli method yazınız
  */
 
+    public static void main(String[] args) {
+
+    }
 
 }
