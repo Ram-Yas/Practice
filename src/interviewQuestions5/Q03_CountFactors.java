@@ -1,5 +1,7 @@
 package interviewQuestions5;
 
+import java.util.Scanner;
+
 public class Q03_CountFactors {
       /*
         Type java code by using while loop,
@@ -8,5 +10,24 @@ public class Q03_CountFactors {
        Factors of 8  = 1, 2, 4, 8 ==> 4
         */
 
+    public static void main(String[] args) {
+
+        Scanner scan = new Scanner(System.in);
+        System.out.print("bir sayi giriniz: ");
+        int sayi = scan.nextInt();
+        int deger = 1;
+        int sayac = 0;
+        System.out.print("Factors of "+sayi+" :");
+        while (sayi >= deger) {
+            if (sayi%deger == 0){
+                System.out.print(deger+ " ");
+                sayac++;
+            }
+            deger++;
+        }
+        System.out.println();
+        System.out.println(sayac);
+
+    }
 
 }
