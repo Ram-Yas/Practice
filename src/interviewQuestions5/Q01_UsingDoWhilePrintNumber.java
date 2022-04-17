@@ -12,6 +12,7 @@ public class Q01_UsingDoWhilePrintNumber {
         for example: 0   5   10  15  20
         */
 
+
         int sayi = 28;
 
         do {
