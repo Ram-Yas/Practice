@@ -21,7 +21,7 @@ public class Q05_UsingDoWhileWithCondition {
               System.out.println("Won");
           }
 
-        } while (number<100);
+        } while (number<100);// sayi 100'den kucuk oldugu surece kod blogu calisir
         System.out.println("Lost");
     }
 
