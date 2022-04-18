@@ -1,6 +1,6 @@
 package interviewQuestions6;
 
-public class Q04 {
+public class Q04_SurviveMonkey{
 
             /*
         There is a lonely monkey in the island

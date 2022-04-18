@@ -2,7 +2,7 @@ package interviewQuestions6;
 
 import java.util.Scanner;
 
-public class Q05 {
+public class Q05_ExponentialNumber {
         /*
           Get 2 numbers from the user.
         first number base
