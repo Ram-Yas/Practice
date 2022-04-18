@@ -1,5 +1,7 @@
 package interviewQuestions5;
 
+import java.util.Scanner;
+
 public class Q01_UsingDoWhilePrintNumber {
 
     public static void main(String[] args) {
@@ -11,13 +13,15 @@ public class Q01_UsingDoWhilePrintNumber {
         increment by 5
         for example: 0   5   10  15  20
         */
+        Scanner scan = new Scanner(System.in);
+        // System.out.println("sayi giriniz : "); bu satir olmayada bilir
+        int sayi = scan.nextInt();
 
-        int sayi = 28;
+        do { //sayi 100'den kucuk oldukca 5'er 5er artir
+            System.out.print(sayi + " ");
+            sayi += 5; // increment degeri
 
-        do {
-          //  System.out.print();
-
-        } while (sayi < 100);
+        } while (sayi < 100); //sartimiz
 
     }
 }
