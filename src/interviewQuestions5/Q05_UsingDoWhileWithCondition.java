@@ -12,10 +12,17 @@ public class Q05_UsingDoWhileWithCondition {
     public static void main(String[] args) {
 
         Scanner scan = new Scanner(System.in);
+        int number;
 
-        do {
+        do { //100'den kucuk oldukca sayiyi gir, sayi 100'den kucukse won, degilse lost yazar
             System.out.print("bir sayi girin: ");
-        } while (true);
+          number = scan.nextInt();
+          if (number < 100){
+              System.out.println("Won");
+          }
+
+        } while (number<100);
+        System.out.println("Lost");
     }
 
 }

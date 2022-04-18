@@ -14,7 +14,7 @@ public class Q03_CountFactors {
 
         Scanner scan = new Scanner(System.in);
         System.out.print("bir sayi giriniz: ");
-        int sayi = scan.nextInt();
+        int sayi = Math.abs(scan.nextInt()); // Math abs sayiyi pozitife ceviriyor
         int deger = 1;
         int sayac = 0;
         System.out.print("Factors of "+sayi+" :");
@@ -23,10 +23,14 @@ public class Q03_CountFactors {
                 System.out.print(deger+ " ");
                 sayac++;
             }
-            deger++;
+            deger++; //carpanlarin sayisini artirmamiz gerekir,
+                    // yoksa dongu disinda assign edilmis deger ile dongude surekli kalir
         }
         System.out.println();
-        System.out.println(sayac);
+        System.out.println("sayinin pozitif carpanlarinin sayisi "+sayac);
+        System.out.println("sayinin negatif carpanlarinin sayisi "+sayac);
+        System.out.println("sayinin tum carpanlarinin sayisi "+2*sayac);
+
 
     }
 
