@@ -20,6 +20,7 @@ public class Q06 {
 
         ArrayList<Character> output = new ArrayList<>();
 
+        
         for (int i = 0; i < arr.length; i++) { // arr'deki her bir elemena bakar
             for (int j = i+1; j <arr.length ; j++) { // her bir elemana bakarken bir onraki ile karsilastirir
                 if (arr[i]==arr[j] && !output.contains(arr[j])) { // ayni elemandan varsa ve istedigin output'ta yoksa
