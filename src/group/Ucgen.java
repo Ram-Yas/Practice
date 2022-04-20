@@ -18,6 +18,7 @@ public class Ucgen extends Sekil {
 
     }
 
+
     public static void main(String[] args) {
         Ucgen dik = new Ucgen(5,4,3);
         //System.out.println(dik.cevreHesaplaUcgen());
