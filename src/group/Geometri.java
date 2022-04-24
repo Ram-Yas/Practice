@@ -2,10 +2,11 @@ package group;
 
 public class Geometri {
 
-    static int kenar1;
-    static int kenar2;
-    static int kenar3;
-    static int kenar4;
 
 
+    public static void main(String[] args) {
+
+        Triangle ucgen1 = new Triangle();
+        ucgen1.setValues(5,8);
+    }
 }
