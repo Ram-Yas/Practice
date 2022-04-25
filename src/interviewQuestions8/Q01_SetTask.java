@@ -1,4 +1,4 @@
-package interviewQuestions08;
+package interviewQuestions8;
 
 import java.util.ArrayList;
 import java.util.HashSet;
