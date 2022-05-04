@@ -1,6 +1,7 @@
 package interviewQuestions9;
 
 public class Q01_MapKeysValues {
+
     //5 tane ulke ismi ve nufusunu oluşturuyoruz.(put)
     //5 tane ulke ismi ve nufusunu yazdırıyoruz(country)
     //5 tane ulke ismi yazdırıyoruz. (keyset())
