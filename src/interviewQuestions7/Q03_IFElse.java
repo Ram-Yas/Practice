@@ -11,4 +11,22 @@ public class Q03_IFElse  {
             OUTPUT : 1 2 Rock 4 Star Rock 7 8 Rock Star 11 Rock 13 14 RockStar...
 		 */
 
+    public static void main(String[] args) {
+
+        printNumbers();
+    }
+
+    private static void printNumbers() {
+        for (int i = 1; i < 30; i++) {
+            if (i%5==0 && i%3==0) {
+                System.out.print("RockStar ");
+            }
+            else if (i%3==0){
+                System.out.print("Rock ");
+            }  else if (i%5==0){
+                System.out.print("Star ");
+
+            } else System.out.print(i+" ");
+        }
+    }
 }

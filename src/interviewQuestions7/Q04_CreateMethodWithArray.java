@@ -1,6 +1,10 @@
 package interviewQuestions7;
 
-public class Q04_CreateMethodWithArray{
+import exercise.Array;
+
+import java.util.Arrays;
+
+public class Q04_CreateMethodWithArray {
 
     //    ||This Part Should be in Main Method||
     //
@@ -15,4 +19,37 @@ public class Q04_CreateMethodWithArray{
     //     -3-Create a method that prints the max element of an array
     //
     //    P.S: Return type should be void because we are not returning anything just printing
+
+    public static void main(String[] args) {
+
+        int array[] = new int[5];
+
+        System.out.println(Arrays.toString(array));
+        for (int i = 0; i < array.length; i++) {
+            array[i] = (int) (Math.random() * 10);
+        }
+        System.out.println(Arrays.toString(array));
+        birinciMethod(array);
+        System.out.println();
+        ikinciMethod(array);
+        ucuncuMethod(array);
+
+    }
+
+    // lambda expressions are used in these methods
+    private static void ucuncuMethod(int[] array) {
+        System.out.print("Array'in max elemani :");
+        System.out.println(Arrays.stream(array).max());
+    }
+
+    private static void birinciMethod(int[] array) {
+        System.out.print("Array'in  elemanilari  :");
+        Arrays.stream(array).forEach(t -> System.out.print(t + " "));
+    }
+
+    public static void ikinciMethod(int[] array) {
+        System.out.print("Array'in toplami : ");
+        System.out.println(Arrays.stream(array).sum());
+    }
+
 }
