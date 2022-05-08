@@ -1,6 +1,6 @@
 package interviewQuestions7;
 
-public class Q03_IFElse  {
+public class Q03_IFElse {
 
     	/*
         Write a method which prints out the numbers from 1 to 30 but for numbers which are a multiple of 3,
@@ -17,16 +17,14 @@ public class Q03_IFElse  {
     }
 
     private static void printNumbers() {
-        for (int i = 1; i < 30; i++) {
-            if (i%5==0 && i%3==0) {
+        for (int i = 1; i <= 30; i++) {
+            if (i % 5 == 0 && i % 3 == 0) { // ilk ortak boleni almamiz kodun calismasi acisindan daha iyidir
                 System.out.print("RockStar ");
-            }
-            else if (i%3==0){
+            } else if (i % 3 == 0) {
                 System.out.print("Rock ");
-            }  else if (i%5==0){
+            } else if (i % 5 == 0) {
                 System.out.print("Star ");
-
-            } else System.out.print(i+" ");
+            } else System.out.print(i + " ");
         }
     }
 }
