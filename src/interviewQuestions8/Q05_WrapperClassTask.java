@@ -10,4 +10,20 @@ public class Q05_WrapperClassTask {
     // ve bu int'nin iki katını döndürür
     // bu yöntemi wrapper sınıfıyla overload et : Integer
 
+    public static void main(String[] args) {
+       // int sayi = 20;
+        twice(5);
+        System.out.println("primitive data type : "+twice(5));
+        Integer sayi =10;
+        System.out.println("non-primitive data type : "+twice(sayi));
+
+    }
+
+    private static int twice(int sayi) {
+        return sayi*2;
+    }
+
+    private static Integer twice(Integer sayi) {
+        return sayi*2;
+    }
 }
